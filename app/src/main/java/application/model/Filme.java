@@ -22,7 +22,7 @@ public class Filme {
     @JoinColumn(name = "id_diretor")
     private Diretor diretor;
 
-    @Column(name = "id_diretor")
+    @Column(name = "id_diretor", updatable = false, insertable = false)
     private Long idDiretor;
 
     public Long getId() {
